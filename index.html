@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="resources/css/index.css" />
+    <title>Descubra Mangás</title>
+ 
+  </head>
+
+  <body>
+	<i class="fa-solid fa-check" style="color: #000000;"></i>
+    <form>
+      <h1 id="titulo">Escolha suas tags</h1>
+      <fieldset>
+        <div class="button-and-label">
+          <div class="tri-state-toggle">
+            <input id="adv-on" class="three-switch-on" type="radio" name="adventure" />
+            <input class="three-switch" type="radio" name="adventure" checked="true"/>
+            <input class="three-switch-off" type="radio" name="adventure" />
+          </div>
+          <label class="label">Aventura</label>
+        </div>
+
+        <div class="button-and-label">
+          <div class="tri-state-toggle">
+            <input class="three-switch-on" type="radio" name="action" />
+            <input class="three-switch" type="radio" name="action" checked="true" />
+            <input class="three-switch-off" type="radio" name="action" />
+          </div>
+          <label class="label">Ação</label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+
+  <script src="resources/js/three-switch.js"></script>
+</html>

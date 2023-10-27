@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins,sans-serif;
+  /* background-color: #191a1c; */
+
+}
+
+body {
+  
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-switch,.three-switch-on,.three-switch-off {
+  height: 30px;
+  width: 50px;
+  appearance: none;
+  background-color: gray;
+  /*border-radius: 50%;*/
+  opacity: 0;
+}
+.three-switch-on{
+  background-color: green;
+}
+.three-switch-off{
+  background-color: red;
+}
+input[type="radio"]:checked {
+  opacity: 1;
+  /* border: 3px solid black; */
+  /*border-radius: 50px;*/
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  /*border-radius: 50px;*/
+}
+
+.button-and-label{
+  display: flex;
+  align-items: center;
+}
+.label{
+  font-family: Poppins,sans-serif;
+}
