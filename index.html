@@ -10,27 +10,29 @@
   </head>
 
   <body>
-	<i class="fa-solid fa-check" style="color: #000000;"></i>
+	  <i class="fa-solid fa-check" style="color: #000000;"></i>
     <form>
       <h1 id="titulo">Escolha suas tags</h1>
       <fieldset>
         <div class="button-and-label">
           <div class="tri-state-toggle">
             <input id="adv-on" class="three-switch-on" type="radio" name="adventure" />
-            <input class="three-switch" type="radio" name="adventure" checked="true"/>
-            <input class="three-switch-off" type="radio" name="adventure" />
+            <input id="adv-null" class="three-switch" type="radio" name="adventure" checked="true"/>
+            <input id="adv-off" class="three-switch-off" type="radio" name="adventure" />
           </div>
           <label class="label">Aventura</label>
         </div>
-
+        <hr class="line"/>
         <div class="button-and-label">
           <div class="tri-state-toggle">
-            <input class="three-switch-on" type="radio" name="action" />
-            <input class="three-switch" type="radio" name="action" checked="true" />
-            <input class="three-switch-off" type="radio" name="action" />
+            <input id="act-on" class="three-switch-on" type="radio" name="action" />
+            <input id="act-null" class="three-switch" type="radio" name="action" checked="true" />
+            <input id="act-off" class="three-switch-off" type="radio" name="action" />
           </div>
           <label class="label">Ação</label>
         </div>
+      
+      
       </fieldset>
     </form>
   </body>
