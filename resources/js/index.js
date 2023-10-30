@@ -16,6 +16,7 @@ function createNewOptions() {
 	let formfieldset = document.createElement('fieldset');
 	formfieldset.classList.add('forms-field');
 
+	// Adicionando demografia
 	let h2 = document.createElement('h2')
 	h2.setAttribute('id', 'titulo');
 	h2.innerHTML = 'Demografia';
@@ -37,6 +38,8 @@ function createNewOptions() {
 
 	formfieldset.appendChild(selectDemo);
 
+	// Adicionando o estado
+
 	h2 = document.createElement('h2');
 	h2.setAttribute('id', 'titulo');
 	h2.innerHTML = 'Estado';
@@ -44,15 +47,16 @@ function createNewOptions() {
 	formfieldset.appendChild(h2);
 
 	let status = ['ongoin', 'completed', 'cancelled', 'hiatus'];
-	let status_ptbr = ['Em lançamento', 'Completo', 'Cancelado', 'Em hiato']
+	let status_ptbr = ['Em lançamento', 'Completo', 'Cancelado', 'Em hiato'];
 	for (i = 0; i < status.length; i++) {
 		let checkbox = document.createElement('input');
 		let label = document.createElement('label');
 		checkbox.setAttribute('type', 'checkbox');
 		checkbox.setAttribute('id', status[i] + '-cb');
 		checkbox.setAttribute('value', status[i]);
-		checkbox.setAttribute('checked', (status[i] === 'ongoin' || status[i] === 'completed'));
-		console.log((status[i] === 'ongoin' || status[i] === 'completed'));
+		if ((status[i] === 'ongoin' || status[i] === 'completed')) {
+			checkbox.setAttribute('checked', 'true');
+		}
 		label.classList.add('label');
 		label.setAttribute('for', status[i] + '-cb');
 		label.innerHTML = status_ptbr[i];
@@ -60,6 +64,11 @@ function createNewOptions() {
 		formfieldset.appendChild(label);
 		formfieldset.appendChild(document.createElement('br'));
 	}
+
+
+
+
+
 	return formfieldset;
 }
 

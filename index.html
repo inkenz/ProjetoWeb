@@ -12,7 +12,7 @@
   <body>
     <div id="base-forms">
       <form id="formulario">
-        <!-- <fieldset class="forms-field">
+        <fieldset class="forms-field">
           <h2 id="titulo">Demografia</h2>
           <select id="demography" name="demography">
             <option value="none">Qualquer</option>
@@ -44,8 +44,14 @@
           <label class="label" for="spanish-cb">Espanhol</label><br />
           <input type="checkbox" id="japanese-cb" value="ja" />
           <label class="label" for="japanese-cb">Japonês</label><br />
-        </fieldset> -->
-        <div id="formsTags">
+
+		  <label class="flag">
+			
+			<input class="flagcheck"type="checkbox">
+		  </label>
+
+        </fieldset> 
+        <!-- <div id="formsTags">
           <h1 id="titulo">Escolha gêneros</h1>
           <fieldset class="forms-field">
             <div class="button-and-label">
@@ -326,11 +332,12 @@
                 />
               </div>
               <label class="label">Vida cotidiana</label>
-            </div>
-          </fieldset>
+            </div> 
+          </fieldset>-->
+		  <button id="next-button" type="button" onclick="tagForm()"></button>
         </div>
       </form>
-      <button id="next-button" type="button" onclick="tagForm()"></button>
+      
     </div>
   </body>
 
