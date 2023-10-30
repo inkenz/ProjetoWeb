@@ -1,144 +1,174 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Poppins, sans-serif;
-  /* background-color: #191a1c; */
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+	/* background-color: #191a1c; */
 }
 
 body {
-  /* height: 50vh; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #191a1c;
+	/* height: 50vh; */
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #191a1c;
 }
 
 #next-button {
-  align-self: right;
-  margin-top: 5%;
-  background-color: #ff6740;
-  border: none;
-  padding: 10%;
-  background-image: url("../icons/icons8-next-96.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: 5px;
-  position: relative;
+	align-self: right;
+	margin-top: 5%;
+	background-color: #ff6740;
+	border: none;
+	padding: 10%;
+	background-image: url("../icons/icons8-next-96.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border-radius: 5px;
+	position: relative;
 
-  left: 80%;
+	left: 80%;
 }
 
 .label {
-  color: white;
+	color: white;
 }
 
 .three-switch,
 .three-switch-on,
 .three-switch-off {
-  height: 30px;
-  width: 50px;
-  appearance: none;
-  background-color: gray;
-  /*border-radius: 50%;*/
-  /*box-shadow: 8px 0 16px 0 rgba(0,0,0,0.3), 6px 0 20px 0 rgba(0,0,0,0.2);*/
+	height: 30px;
+	width: 50px;
+	appearance: none;
+	background-color: gray;
+	/*border-radius: 50%;*/
+	/*box-shadow: 8px 0 16px 0 rgba(0,0,0,0.3), 6px 0 20px 0 rgba(0,0,0,0.2);*/
 
-  background-image: url("../icons/icons8-minus-26.png");
-  background-size: 65%;
-  background-repeat: no-repeat;
-  background-position: center;
+	background-image: url("../icons/icons8-minus-26.png");
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: center;
 
-  opacity: 0;
+	opacity: 0;
 }
 
 .three-switch-on {
-  background-color: #ff6740;
-  background-image: url("../icons/check.png");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+	background-color: #ff6740;
+	background-image: url("../icons/check.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .three-switch-off {
-  background-color: #191a1c;
-  background-image: url("../icons/icons8-close-30.png");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+	background-color: #191a1c;
+	background-image: url("../icons/icons8-close-30.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 input[type="radio"]:checked {
-  opacity: 1;
-  /* border: 3px solid black; */
-  /*border-radius: 50px;*/
+	opacity: 1;
+	/* border: 3px solid black; */
+	/*border-radius: 50px;*/
 }
 
 input:hover,
 button:hover,
 .flag {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .tri-state-toggle {
-  margin-top: 1.25%;
-  margin-bottom: 1.25%;
-  margin-right: 6.5%;
-  display: flex;
-  justify-content: center;
-  border: 3px solid black;
-  border-radius: 5px;
+	margin-top: 1.25%;
+	margin-bottom: 1.25%;
+	margin-right: 6.5%;
+	display: flex;
+	justify-content: center;
+	border: 3px solid black;
+	border-radius: 5px;
 }
 
 .button-and-label {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .forms-field {
-  border: 0;
-  border-radius: 1%;
-  background-color: #2c2c2c;
-  height: 450px;
-  width: 295px;
-  padding: 2%;
+	border: 0;
+	border-radius: 1%;
+	background-color: #2c2c2c;
+	height: 450px;
+	width: 295px;
+	padding: 2%;
 }
 
 #base-forms {
-  background-color: #2c2c2c;
-  margin: 3%;
-  padding: 3%;
-  border-radius: 1%;
+	background-color: #2c2c2c;
+	margin: 3%;
+	padding: 3%;
+	border-radius: 1%;
 }
 
 .line {
-  background-color: black;
+	background-color: black;
 }
 
 h1,
 h2 {
-  text-align: center;
-  color: white;
+	text-align: center;
+	color: white;
 }
 
-.flag {
-  font-size: 50px;
-  background-size: 50px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-color: white;
-  border-radius: 15%;
+.flags {
+	justify-content: center;
+	align-self: center;
+	border-radius: 15%;
 }
 
 .flagcheck {
-  width: 125px;
-  height: 50px;
+	width: 80px;
+	height: 50px;
 
-  background-size: 50px;
-  appearance: none;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: url("../icons/icons8-brazil-100.png");
+	background-size: 50px;
+	background-color: #2c2c2c;
+	border-radius: 10%;
+	appearance: none;
+	border: 2px solid #191a1c;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#demography {
+	justify-content: center;
+	align-self: center;
+}
+
+
+#ptbr {
+	background-image: url("../icons/icons8-brazil-100.png");
+}
+
+#enus {
+	background-image: url("../icons/icons8-united-100.png");
+}
+
+#es {
+	background-image: url("../icons/icons8-spain-100.png");
+}
+
+#jp {
+	background-image: url("../icons/icons8-japan-100.png");
+}
+
+.flagcheck:checked {
+	background-color: #ff6740;
+}
+
+.flagcheck:hover {
+	background-color: #191a1c;
 }

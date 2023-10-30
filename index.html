@@ -1,57 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="resources/css/index.css" />
 
-    <title>Descubra Mangás</title>
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="resources/css/index.css" />
 
-  <body>
-    <div id="base-forms">
-      <form id="formulario">
-        <fieldset class="forms-field">
-          <h2 id="titulo">Demografia</h2>
-          <select id="demography" name="demography">
-            <option value="none">Qualquer</option>
-            <option value="shoujo">Shoujo</option>
-            <option value="josei">Josei</option>
-            <option value="shounen">Shounen</option>
-            <option value="seinen">Seinen</option>
-          </select>
-          <h2 id="titulo">Estado</h2>
-          <input type="checkbox" id="ongoin-cb" value="ongoin" checked="true" />
-          <label class="label" for="ongoin-cb">Em lançamento</label><br />
-          <input
-            type="checkbox"
-            id="completed-cb"
-            checked="true"
-            value="completed"
-          />
-          <label class="label" for="completed-cb">Completo</label><br />
-          <input type="checkbox" id="hiatus-cb" value="ongoin" />
-          <label class="label" for="hiatus-cb">Em hiato</label><br />
-          <input type="checkbox" id="cancelled-cb" value="ongoin" />
-          <label class="label" for="cancelled-cb">Cancelado</label><br />
-          <h2 id="titulo">Traduzido em</h2>
-          <input type="checkbox" id="english-cb" value="en" />
-          <label class="label" for="english-cb">Inglês</label><br />
-          <input type="checkbox" id="portugese-cb" value="pt-br" />
-          <label class="label" for="portugese-cb">Português</label><br />
-          <input type="checkbox" id="spanish-cb" value="es" />
-          <label class="label" for="spanish-cb">Espanhol</label><br />
-          <input type="checkbox" id="japanese-cb" value="ja" />
-          <label class="label" for="japanese-cb">Japonês</label><br />
+	<title>Descubra Mangás</title>
+</head>
 
-		  <label class="flag">
-			
-			<input class="flagcheck"type="checkbox">
-		  </label>
-
-        </fieldset> 
-        <!-- <div id="formsTags">
+<body>
+	<div id="base-forms">
+		<form id="formulario">
+			<fieldset class="forms-field">
+				<h2 id="titulo">Demografia</h2>
+				<select id="demography" name="demography">
+					<option value="none">Qualquer</option>
+					<option value="shoujo">Shoujo</option>
+					<option value="josei">Josei</option>
+					<option value="shounen">Shounen</option>
+					<option value="seinen">Seinen</option>
+				</select>
+				<h2 id="titulo">Estado</h2>
+				<input type="checkbox" id="ongoin-cb" value="ongoin" checked="true" />
+				<label class="label" for="ongoin-cb">Em lançamento</label><br />
+				<input type="checkbox" id="completed-cb" checked="true" value="completed" />
+				<label class="label" for="completed-cb">Completo</label><br />
+				<input type="checkbox" id="hiatus-cb" value="ongoin" />
+				<label class="label" for="hiatus-cb">Em hiato</label><br />
+				<input type="checkbox" id="cancelled-cb" value="ongoin" />
+				<label class="label" for="cancelled-cb">Cancelado</label><br />
+				<h2 id="titulo">Traduzido em</h2>
+				<div id="flags">
+					<input id="ptbr" class="flagcheck" type="checkbox">
+					<input id="enus" class="flagcheck" type="checkbox">
+					<input id="es" class="flagcheck" type="checkbox">
+					<input id="jp" class="flagcheck" type="checkbox">
+				</div>
+			</fieldset>
+			<!-- <div id="formsTags">
           <h1 id="titulo">Escolha gêneros</h1>
           <fieldset class="forms-field">
             <div class="button-and-label">
@@ -334,12 +322,13 @@
               <label class="label">Vida cotidiana</label>
             </div> 
           </fieldset>-->
-		  <button id="next-button" type="button" onclick="tagForm()"></button>
-        </div>
-      </form>
-      
-    </div>
-  </body>
+			<button id="next-button" type="button" onclick="tagForm()"></button>
+	</div>
+	</form>
 
-  <script src="resources/js/index.js"></script>
+	</div>
+</body>
+
+<script src="resources/js/index.js"></script>
+
 </html>
