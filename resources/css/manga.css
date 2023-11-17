@@ -150,9 +150,9 @@ body {
     font-size: 2vw;
 }
 
-#genre-list {
+.genre-list {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .genre {
@@ -160,10 +160,14 @@ body {
     
     border-radius: 10%;
     width: auto;
-    height: min-content;
+    height: auto;
+    max-height: 25px;
     padding-left: 1%;
     padding-right: 1%;
+    margin-bottom: 0.5%;
+    white-space: nowrap;
 }
+
 
 h2,
 span,
@@ -173,11 +177,11 @@ p {
 }
 
 h2{
-    font-size: 2vw;
+    font-size: 1.75vw;
 }
 span,
 p{
-    font-size: 1.5vw;
+    font-size: 1.25vw;
 }
 
 @media (max-width: 450px) {
