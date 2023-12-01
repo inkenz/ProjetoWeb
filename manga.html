@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="resources/css/manga.css" />
+	<link rel="stylesheet" href="resources/css/utils.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,-50..200"
+        />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link rel="stylesheet" href="resources/css/manga.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,-50..200" />
-	<title>Descubra Mangás</title>
-</head>
-<body>
-    <div class="container">
-        <div id="title-and-save">
-			<div id="title-div">
-				<h1 id="h1-title">
-					Titulo Titulo Titulo Titulo Titulo Titulo Titulo Titulo 
-				</h1>
-				<span id="authors">
-					autor1 autor1 autor1 autor1
-				</span>
-			</div>
-			<div id="buttons">
-				<button class="material-symbols-outlined btn">
-						home
-				</button>
-				<button class="material-symbols-outlined btn">
-					list
-				</button>
-			</div>
-        </div>
-        <!-- flex-wrap:wrap -->
-        <div id="cover-div">
-			<div class="bg-img"></div>
-			<div class="front-img">	
-				<img id="cover-img" src="/resources/icons/cover_exemplo.jpg"/>
-			</div>
-		</div>
-        <div id="info">
-			<div id="genres">
-				<h2 id="genre-h2"> Gêneros</h2>
-				<div class="genre-list">
-					<div class="genre">
-						<span>action</span>
-					</div>
-					
-				</div>
-			</div>
-			<div id="date">
-				<h2 id="date-h2">Ano de criação</h2>
-				<span>2014</span>
-			</div>
-			<div id="synopsis-div">
-				<h2 id="synopsis-h2"> Sinopse</h2>
-				<p id="synopsis-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia fermentum convallis. Maecenas suscipit nunc in gravida vehicula. Proin a leo quis libero maximus dictum ac eu neque. Curabitur gravida, ipsum ut ultricies aliquam, nisl sapien egestas lectus, vel ullamcorper quam sapien eu sapien. Proin vel dolor hendrerit, sagittis felis in, eleifend nisl. Nunc non euismod justo. Morbi lacus erat, pulvinar sed erat eu, luctus sagittis nulla. Nunc vel justo sed tortor vehicula egestas. In hac habitasse platea dictumst. Suspendisse consectetur dolor eget nunc mollis, in semper augue aliquet. Sed tristique arcu id tortor facilisis euismod. Curabitur vel blandit arcu, non sollicitudin magna. Etiam justo augue, tempus in placerat ac, ultricies a nisl. </p>
-			</div>
-
-        </div>
-    </div> 
-    <div class="float-btns">
-		<button class="material-symbols-outlined float-btn">west</button>
-		<button class="material-symbols-outlined float-btn">bookmark</button>
-		<button class="material-symbols-outlined float-btn">east</button>
+        <title>Descubra Mangás</title>
+    </head>
+    <body>
+	<div class="utils">
+		<a href="http://127.0.0.1:5500/index.html">
+        <button class="nav-home"><img class="home-img btn-img"></img><span class="btn-text">Início</span></button>
+        </a>
+        <a href="http://127.0.0.1:5500/lista.html">
+		<button class="nav-lista"><img class="list-img btn-img"></img><span class="btn-text">Sua lista</span></button>
+        </a>
 	</div>
-</body>
+        <div class="container">
+            <div id="title-and-save">
+                <div id="title-div">
+                    <h1 id="h1-title">
+                        Titulo Titulo Titulo Titulo Titulo Titulo Titulo Titulo
+                    </h1>
+                    <span id="authors"> autor1 autor1 autor1 autor1 </span>
+                </div>
+            </div>
+            <!-- flex-wrap:wrap -->
+            <div id="cover-div">
+                <div class="bg-img"></div>
+                <div class="front-img">
+                    <img
+                        id="cover-img"
+                        src="/resources/icons/cover_exemplo.jpg"
+                    />
+                </div>
+            </div>
+            <div id="info">
+                <div id="genres">
+                    <h2 id="genre-h2">Gêneros</h2>
+                    <div class="genre-list">
+                        <div class="genre">
+                            <span>action</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <h2 id="date-h2">Ano de criação</h2>
+                <span>2014</span>
+                
+                <h2>Progresso</h2>
+                <span>Em publicação</span>
+
+                    <h2 id="synopsis-h2">Sinopse</h2>
+                    <p id="synopsis-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam lacinia fermentum convallis. Maecenas suscipit
+                        nunc in gravida vehicula. Proin a leo quis libero
+                        maximus dictum ac eu neque. Curabitur gravida, ipsum ut
+                        ultricies aliquam, nisl sapien egestas lectus, vel
+                        ullamcorper quam sapien eu sapien. Proin vel dolor
+                        hendrerit, sagittis felis in, eleifend nisl. Nunc non
+                        euismod justo. Morbi lacus erat, pulvinar sed erat eu,
+                        luctus sagittis nulla. Nunc vel justo sed tortor
+                        vehicula egestas. In hac habitasse platea dictumst.
+                        Suspendisse consectetur dolor eget nunc mollis, in
+                        semper augue aliquet. Sed tristique arcu id tortor
+                        facilisis euismod. Curabitur vel blandit arcu, non
+                        sollicitudin magna. Etiam justo augue, tempus in
+                        placerat ac, ultricies a nisl.
+                    </p>
+            </div>
+        </div>
+        <div class="float-btns">
+            <button class="left-btn float-btn"></button>
+            <button id="bookmark" class="bookmark-img float-btn" onclick="bookmarklist()">
+            </button>
+            <button class="right-btn float-btn"></button>
+        </div>
+    </body>
+
+    <script src="resources/js/manga.js"></script>
+</html>

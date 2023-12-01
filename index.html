@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="resources/css/index.css" />
+        <link rel="stylesheet" href="resources/css/lista.css" />
+        <link rel="stylesheet" href="resources/css/manga.css" />
+        <link rel="stylesheet" href="resources/css/utils.css" />
+        <title>Descubra Mangás</title>
+    </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link rel="stylesheet" href="resources/css/index.css" />
-
-	<title>Descubra Mangás</title>
-</head>
-
-<body>
-	<div id="base-forms">
-		<form id="formulario">
-			<!-- <fieldset class="forms-field">
+    <body>
+        <div class="utils">
+            <a href="http://127.0.0.1:5500/lista.html">
+          <button class="nav-lista"><img class="list-img btn-img"></img><span class="btn-text">Sua lista</span></button>
+        </a>
+        </div>
+        <div class="body">
+        <div id="base-forms">
+            <form id="formulario">
+                <!-- <fieldset class="forms-field">
 				<h2 id="titulo">Demografia</h2>
 				<select id="demography" name="demography">
 					<option value="none">Qualquer</option>
@@ -39,296 +46,303 @@
 					<input id="jp" class="flagcheck" type="checkbox">
 				</div>
 			</fieldset> -->
-			<div id="formsTags">
-          <h1 id="titulo">Escolha gêneros</h1>
-          <fieldset class="forms-field">
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="adv-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="adventure"
-                  value="on"
-                />
-                <input
-                  id="adv-null"
-                  class="three-switch"
-                  type="radio"
-                  name="adventure"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="adv-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="adventure"
-                  value="off"
-                />
-              </div>
-              <label class="label">Aventura</label>
-            </div>
+                <div id="formsTags">
+                    <h1 id="titulo">Escolha gêneros</h1>
+                    <fieldset class="forms-field">
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="adv-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="adventure"
+                                    value="on"
+                                />
+                                <input
+                                    id="adv-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="adventure"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="adv-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="adventure"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Aventura</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="act-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="action"
-                  value="on"
-                />
-                <input
-                  id="act-null"
-                  class="three-switch"
-                  type="radio"
-                  name="action"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="act-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="action"
-                  value="off"
-                />
-              </div>
-              <label class="label">Ação</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="act-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="action"
+                                    value="on"
+                                />
+                                <input
+                                    id="act-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="action"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="act-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="action"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Ação</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="com-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="comedy"
-                  value="on"
-                />
-                <input
-                  id="com-null"
-                  class="three-switch"
-                  type="radio"
-                  name="comedy"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="com-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="comedy"
-                  value="off"
-                />
-              </div>
-              <label class="label">Comédia</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="com-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="comedy"
+                                    value="on"
+                                />
+                                <input
+                                    id="com-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="comedy"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="com-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="comedy"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Comédia</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="dra-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="drama"
-                  value="on"
-                />
-                <input
-                  id="dra-null"
-                  class="three-switch"
-                  type="radio"
-                  name="drama"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="dra-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="drama"
-                  value="off"
-                />
-              </div>
-              <label class="label">Drama</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="dra-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="drama"
+                                    value="on"
+                                />
+                                <input
+                                    id="dra-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="drama"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="dra-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="drama"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Drama</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="spo-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="sports"
-                  value="on"
-                />
-                <input
-                  id="spo-null"
-                  class="three-switch"
-                  type="radio"
-                  name="sports"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="spo-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="sports"
-                  value="off"
-                />
-              </div>
-              <label class="label">Esportes</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="spo-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="sports"
+                                    value="on"
+                                />
+                                <input
+                                    id="spo-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="sports"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="spo-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="sports"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Esportes</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="fan-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="fantasy"
-                  value="on"
-                />
-                <input
-                  id="fan-null"
-                  class="three-switch"
-                  type="radio"
-                  name="fantasy"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="fan-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="fantasy"
-                  value="off"
-                />
-              </div>
-              <label class="label">Fantasia</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="fan-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="fantasy"
+                                    value="on"
+                                />
+                                <input
+                                    id="fan-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="fantasy"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="fan-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="fantasy"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Fantasia</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="mec-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="mecha"
-                  value="on"
-                />
-                <input
-                  id="mec-null"
-                  class="three-switch"
-                  type="radio"
-                  name="mecha"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="mec-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="mecha"
-                  value="off"
-                />
-              </div>
-              <label class="label">Mecha</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="mec-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="mecha"
+                                    value="on"
+                                />
+                                <input
+                                    id="mec-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="mecha"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="mec-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="mecha"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Mecha</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="ter-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="horror"
-                  value="on"
-                />
-                <input
-                  id="ter-null"
-                  class="three-switch"
-                  type="radio"
-                  name="horror"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="ter-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="horror"
-                  value="off"
-                />
-              </div>
-              <label class="label">Terror</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="ter-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="horror"
+                                    value="on"
+                                />
+                                <input
+                                    id="ter-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="horror"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="ter-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="horror"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Terror</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="rom-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="romance"
-                  value="on"
-                />
-                <input
-                  id="rom-null"
-                  class="three-switch"
-                  type="radio"
-                  name="romance"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="rom-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="romance"
-                  value="off"
-                />
-              </div>
-              <label class="label">Romance</label>
-            </div>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="rom-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="romance"
+                                    value="on"
+                                />
+                                <input
+                                    id="rom-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="romance"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="rom-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="romance"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Romance</label>
+                        </div>
 
-            <div class="button-and-label">
-              <div class="tri-state-toggle">
-                <input
-                  id="sol-on"
-                  class="three-switch-on"
-                  type="radio"
-                  name="slice-of-life"
-                  value="on"
-                />
-                <input
-                  id="sol-null"
-                  class="three-switch"
-                  type="radio"
-                  name="slice-of-life"
-                  value="null"
-                  checked="true"
-                />
-                <input
-                  id="sol-off"
-                  class="three-switch-off"
-                  type="radio"
-                  name="slice-of-life"
-                  value="off"
-                />
-              </div>
-              <label class="label">Vida cotidiana</label>
-            </div> 
-          </fieldset>
-			<button id="next-button" type="button" onclick="tagForm()"></button>
-	</div>
-	</form>
+                        <div class="button-and-label">
+                            <div class="tri-state-toggle">
+                                <input
+                                    id="sol-on"
+                                    class="three-switch-on"
+                                    type="radio"
+                                    name="slice-of-life"
+                                    value="on"
+                                />
+                                <input
+                                    id="sol-null"
+                                    class="three-switch"
+                                    type="radio"
+                                    name="slice-of-life"
+                                    value="null"
+                                    checked="true"
+                                />
+                                <input
+                                    id="sol-off"
+                                    class="three-switch-off"
+                                    type="radio"
+                                    name="slice-of-life"
+                                    value="off"
+                                />
+                            </div>
+                            <label class="label">Vida cotidiana</label>
+                        </div>
+                    </fieldset>
+                  </br>
+                    <button
+                        id="next-button"
+                        type="button"
+                        onclick="tagForm()"
+                    ></button>
+                </div>
+            </form>
+        </div>
+        <div class="manga-list">
+            <span>Sem resultados</span>
+        </div>
+      </div>
+    </body>
 
-	</div>
-</body>
-
-<script src="resources/js/index.js"></script>
-
+    <script src="/resources/js/index.js"></script>
 </html>

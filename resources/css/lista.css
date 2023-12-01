@@ -1,37 +1,94 @@
 * {
-	font-family: Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 body {
-	background-color: #191a1c;
+    background-color: #191a1c;
+}
+.header {
+    background-color: #2c2c2c;
 }
 
-.manga-list{
+.manga-list {
     flex-direction: column;
-    gap:50px;
+    gap: 50px;
 }
 
-.saved-manga{
+.saved-manga {
     background-color: #2c2c2c;
     border-radius: 10px;
     padding: 1%;
     margin-bottom: 1%;
-    display:flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-.info{
+
+.saved-manga:hover {
+    cursor: pointer;
+    border: 3px #ff6740;
+}
+
+.content {
+    display: flex;
+    width: 95%;
+}
+
+.info {
     width: 80%;
 }
 
+.title {
+    font-size: max(2vw, 17px);
 
-.title{
-    font-size: 2.5vw;
     margin-bottom: 0;
 }
-.author{
-    font-size:2vw;
+.author {
+    font-size: max(1.5vw, 16px);
     margin-bottom: 1%;
 }
-.cover{
-    max-width: 8%;
-    height: auto;
+.cover {
+    max-width: max(8%, 32px);
+
+    width: auto;
+    height: 100%;
+}
+
+.trashcan {
+    width: 70%;
+    height: 70%;
+    content: url("../icons/trash-2-outline.svg");
+}
+
+.btn {
+    display: flex; /* Torna o botão um contêiner flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    width: 5%; /* Define a largura do botão */
+    height: 5%; /* Define a altura do botão */
+    min-width: 35px;
+    min-height: 35px;
+    padding: 0; /* Remove o padding */
+    cursor: pointer;
+}
+
+.btn-trash {
+    width: 5%; /* Define a largura do botão */
+    height: 5%; /* Define a altura do botão */
+    min-width: 35px;
+    min-height: 35px;
+    padding: 0; /* Remove o padding */
+    cursor: pointer;
+    background-color: #fd4e31;
+    border: none;
+    align-self: center;
+}
+.header {
+    padding-bottom: 2.5%;
+}
+@media (max-width: 600px) {
+    .cover {
+        width: auto;
+        height: 50%;
+    }
 }

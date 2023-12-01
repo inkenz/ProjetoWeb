@@ -1,0 +1,71 @@
+@import url(colors.css);
+
+.utils {
+    background-color: var(--light-dark);
+    min-height: 39px;
+    height: 3.5vw;
+    width: 100%;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-lista {
+    background-color: var(--light-dark);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-home {
+    background-color: var(--light-dark);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-lista:hover,
+.nav-home:hover {
+    background-color: var(--orange);
+}
+
+.btn-text {
+    font-size: 16px;
+}
+.list-img {
+    content: url("../icons/list-outline.svg");
+}
+
+.home-img {
+    content: url("../icons/home-outline.svg");
+}
+
+.btn-img {
+    min-height: 33px;
+    width: auto;
+    height: 2.75vw;
+    align-self: center;
+}
+
+a {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
