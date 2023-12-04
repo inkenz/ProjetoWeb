@@ -194,7 +194,7 @@ p {
     background-image: url("../icons/bookmark-outline.svg");
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -224,13 +224,11 @@ p {
 
         -ms-transform: translate(-50%, -50%);
         transform: translate(0%, 23%);
-
-        font-size: 5vw !important;
     }
 
     #info {
         grid-area: 3 / 1 / 4 / 2;
-        margin-bottom: 30%;
+        margin-bottom: 40%;
     }
 
     #cover-img {
@@ -264,12 +262,6 @@ p {
         background-size: cover;
     }
 
-    .float-btns {
-        right: 20vw;
-        left: 20vw;
-        bottom: 20px;
-    }
-
     #h1-title {
         font-size: 4.5vw;
     }
@@ -287,8 +279,17 @@ p {
     }
 
     .float-btn {
-        width: 70px;
-        height: 70px;
-        font-size: 32px !important;
+        display: flex;
+        justify-self: center;
+
+        right: 10vw;
+        left: 10vw;
+        bottom: 20px;
+
+        max-width: 70px;
+        max-height: 70px;
+
+        width: 30vw;
+        height: 30vw;
     }
 }
