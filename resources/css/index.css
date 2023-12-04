@@ -48,8 +48,6 @@ body {
     width: 50px;
     appearance: none;
     background-color: gray;
-    /*border-radius: 50%;*/
-    /*box-shadow: 8px 0 16px 0 rgba(0,0,0,0.3), 6px 0 20px 0 rgba(0,0,0,0.2);*/
 
     background-image: url("../icons/minus-outline.svg");
     background-size: 65%;

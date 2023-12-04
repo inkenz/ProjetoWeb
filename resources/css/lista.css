@@ -61,23 +61,23 @@ body {
 }
 
 .btn {
-    display: flex; /* Torna o botão um contêiner flexível */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    width: 5%; /* Define a largura do botão */
-    height: 5%; /* Define a altura do botão */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 5%; 
+    height: 5%;
     min-width: 35px;
     min-height: 35px;
-    padding: 0; /* Remove o padding */
+    padding: 0;
     cursor: pointer;
 }
 
 .btn-trash {
-    width: 5%; /* Define a largura do botão */
-    height: 5%; /* Define a altura do botão */
+    width: 5%; 
+    height: 5%; 
     min-width: 35px;
     min-height: 35px;
-    padding: 0; /* Remove o padding */
+    padding: 0; 
     cursor: pointer;
     background-color: #fd4e31;
     border: none;
