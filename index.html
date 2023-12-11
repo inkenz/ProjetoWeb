@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://api.mangadex.org">
         <link rel="stylesheet" href="resources/css/index.css" />
         <link rel="stylesheet" href="resources/css/lista.css" />
         <link rel="stylesheet" href="resources/css/manga.css" />
@@ -13,9 +14,12 @@
 
     <body>
         <div class="utils">
+            <a href="http://127.0.0.1:5500/index.html">
+            <button class="nav-home"><img class="home-img btn-img"></img><span class="btn-text">Início</span></button>
+            </a>
             <a href="http://127.0.0.1:5500/lista.html">
-          <button class="nav-lista"><img class="list-img btn-img"></img><span class="btn-text">Sua lista</span></button>
-        </a>
+            <button class="nav-lista"><img class="list-img btn-img"></img><span class="btn-text">Sua lista</span></button>
+            </a>
         </div>
         <div class="body">
         <div id="base-forms">
@@ -47,7 +51,7 @@
 				</div>
 			</fieldset> -->
                 <div id="formsTags">
-                    <h1 id="titulo">Escolha gêneros</h1>
+                    <h1 id="titulo">Filtros</h1>
                     <fieldset class="forms-field">
                         <div class="button-and-label">
                             <div class="tri-state-toggle">
@@ -333,7 +337,6 @@
                     <button
                         id="next-button"
                         type="button"
-                        onclick="tagForm()"
                     ></button>
                 </div>
             </form>
@@ -343,6 +346,6 @@
         </div>
       </div>
     </body>
-
     <script src="/resources/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

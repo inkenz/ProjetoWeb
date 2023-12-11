@@ -1,21 +1,45 @@
-function tagForm() {
-	var formulario = document.getElementById('formulario');
+document.getElementById('next-button').addEventListener('click',function() {
 	let include = getGenreList(true);
 	let exclude = getGenreList(false);
 	console.log(include);
 	console.log(exclude);
 	sessionStorage.setItem('includeList', JSON.stringify(include));
-	sessionStorage.setItem('includeList', JSON.stringify(exclude));
+	sessionStorage.setItem('excludeList', JSON.stringify(exclude));
 
 
 	generateList();
 }
+);
 
-function generateList() {
-	var mangalist = document.getElementsByClassName('manga-list')[0];
+async function generateList() {
+	let mangalist = document.getElementsByClassName('manga-list')[0];
+	let include = JSON.parse(sessionStorage.getItem('includeList'));
+	let exclude = JSON.parse(sessionStorage.getItem('excludeList'));
+	const baseUrl = 'https://api.mangadex.org';
+	const tags = await axios(`${baseUrl}/manga/tag`);
+	const includedTagIDs = tags.data.data
+    	.filter(tag => include.includes(tag.attributes.name.en))
+    	.map(tag => tag.id);
+	
+	const excludedTagIDs = tags.data.data
+		.filter(tag => excludedTagNames.includes(tag.attributes.name.en))
+		.map(tag => tag.id);
+	
+
+	const resp = await axios({
+		method: 'GET',
+		url: `${baseUrl}/manga`,
+				params: {
+				'includedTags': includedTagIDs,
+				'excludedTags': excludedTagIDs
+			}
+	});
+		
+	console.log(resp.data.data.map(manga => manga.id));
+	
 	mangalist.innerHTML = "";
 	for (var i = 0; i < 20; i++) {
-		var div = document.createElement('div');
+		let div = document.createElement('div');
 		div.className = 'saved-manga';
 		div.innerHTML = `
 		<a href="http://127.0.0.1:5500/manga.html">
