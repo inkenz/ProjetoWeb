@@ -35,22 +35,22 @@ body {
 }
 
 .info {
-    width: 80%;
+    width: 50vw;
 }
 
 .title {
-    font-size: max(2vw, 17px);
+    font-size: max(2vw, 12px);
 
     margin-bottom: 0;
 }
 .author {
-    font-size: max(1.5vw, 16px);
+    font-size: max(1.5vw, 10px);
     margin-bottom: 1%;
 }
 .cover {
-    max-width: max(8%, 32px);
-
-    width: auto;
+    /* max-width: max(8%, 32px); */
+    object-fit: cover;
+    width: 96px;
     height: 100%;
 }
 
@@ -61,10 +61,10 @@ body {
 }
 
 .btn {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 5%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
     height: 5%;
     min-width: 35px;
     min-height: 35px;
@@ -73,11 +73,11 @@ body {
 }
 
 .btn-trash {
-    width: 5%; 
-    height: 5%; 
+    width: 5%;
+    height: 5%;
     min-width: 35px;
     min-height: 35px;
-    padding: 0; 
+    padding: 0;
     cursor: pointer;
     background-color: #fd4e31;
     border: none;
@@ -88,7 +88,7 @@ body {
 }
 @media (max-width: 600px) {
     .cover {
-        width: auto;
+        width: 96px;
         height: 50%;
     }
 }

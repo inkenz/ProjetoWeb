@@ -14,14 +14,14 @@
         <title>Descubra Mangás</title>
     </head>
     <body>
-	<div class="utils">
-		<a href="http://127.0.0.1:5500/index.html">
-        <button class="nav-home"><img class="home-img btn-img"></img><span class="btn-text">Início</span></button>
-        </a>
-        <a href="http://127.0.0.1:5500/lista.html">
-		<button class="nav-lista"><img class="list-img btn-img"></img><span class="btn-text">Sua lista</span></button>
-        </a>
-	</div>
+        <div class="utils">
+            <a href="http://127.0.0.1:5500/index.html">
+                <button class="nav-home"><img class="home-img btn-img"></img><span class="btn-text">Início</span></button>
+                </a>
+                <a href="http://127.0.0.1:5500/lista.html">
+            <button class="nav-lista"><img class="list-img btn-img"></img><span class="btn-text">Sua lista</span></button>
+                </a>
+          </div>
         <div class="container">
             <div id="title-and-save">
                 <div id="title-div">
@@ -78,11 +78,11 @@
                     </div>
                 </div>
             
-                <h2 id="date-h2">Ano de criação</h2>
-                <span>2014</span>
+                <h2 id="date-h2">Data de criação</h2>
+                <span id="date-span">2014</span>
                 
                 <h2>Progresso</h2>
-                <span>Em publicação</span>
+                <span id="progress-span">Em publicação</span>
 
                     <h2 id="synopsis-h2">Sinopse</h2>
                     <p id="synopsis-p">
@@ -105,10 +105,10 @@
             </div>
         </div>
         <div class="float-btns">
-            <button class="left-btn float-btn"></button>
+            <button class="left-btn float-btn" onclick="go_left()"></button>
             <button id="bookmark" class="bookmark-img float-btn" onclick="bookmarklist()">
             </button>
-            <button class="right-btn float-btn"></button>
+            <button class="right-btn float-btn" onclick="go_right()"></button>
         </div>
     </body>
 

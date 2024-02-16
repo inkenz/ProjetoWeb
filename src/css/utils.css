@@ -54,6 +54,14 @@
     content: url("../icons/home-outline.svg");
 }
 
+.bookmark-outline-img {
+    background-image: url("../icons/bookmark-outline.svg");
+}
+
+.bookmark-img {
+    background-image: url("../icons/bookmark.svg");
+}
+
 .btn-img {
     min-height: 33px;
     width: auto;
